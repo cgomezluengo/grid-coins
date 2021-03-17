@@ -11,6 +11,15 @@
 
 <body>
     <h1>hola lediox</h1>
+    <script>
+    fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum,bitcoin&vs_currencies=usd')
+      .then(response => response.json())
+      .then(json => 
+      { console.log(json);
+      document.getElementById("priceETH").innerHTML = json.ethereum.usd; 
+      })
+    
+    </script>
     <div class="mainTableContainer">
         <div class="coinRow">
             <div class="pillCoin">
@@ -23,7 +32,7 @@
                 <div class="name"> Eterium </div>
             </div>
             <div class="pillCoin">
-                <div class="price"> $123</div>
+                <div class="price" id="priceETH"> </div>
             </div>
             <div class="pillCoin">
                 <div class="percentagePerHour">%100</div>
@@ -53,5 +62,6 @@
     </div>
     
     <script src="app.js"></script>
+   
 </body>
 </html> 
