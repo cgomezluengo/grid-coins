@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;    
+}
+
+//big mooma
+
+.mainTableContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+//block
+
+.pillCoin{
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//row
+.coinRow{
+    display: grid;
+    height: 8vh;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr 1fr 1fr 3fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+}
+
+// Indivitual columns
+
+.favorites{
+    grid-column: 1/10;
+    grid-row: 1/1;
+
+}
+
+.order{
+    grid-column: 2/10;
+    grid-row: 1/1;
+}
+
+.name{
+    grid-column: 3/10;
+    grid-row: 1/1;
+}
+
+.price{
+    grid-column: 4/10;
+    grid-row: 1/1;
+}
+
+.percentagePerHour{
+    grid-column: 5/10;
+    grid-row: 1/1;
+}
+.percentagePerDay{
+    grid-column: 6/10;
+    grid-row: 1/1;
+}
+.percentagePerWeek{
+    grid-column: 7/10;
+    grid-row: 1/1;    
+}
+
+.last24Hours{
+    grid-column: 8/10;
+    grid-row: 1/1;
+}
+
+.last7Days{
+    grid-column: 9/10;
+    grid-row: 1/1;
+
+}
+.settingsPerCoin{
+    grid-column: 10/10;
+    grid-row: 1/1;
+}
